@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=TikTok+Sans:opsz,slnt,wdth,wght@12..36,-6..0,75..150,300..900&display=swap');
+
+$bgw: #000000;
+$textw: #ffffff;
+$btntextw:#000000;
+$buttonw: #ffffff;
+
+$bg: #ffffff;
+$bgss: #1c1c1c;
+$text: #000000;
+$btntext:#ffffff;
+$button: #000000;
+$bidde: #6400FF;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg;
+    h1, h2, h3, h4, a, p {
+        color: $text;
+        cursor: default;
+    }
+    .actss {
+        color: $bidde;
+    }
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: rgba($bg, 0.8); 
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        backdrop-filter: blur(32px);
+        * {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .left {
+            margin-right: auto;
+            justify-content: start;
+            margin-left: 8px;
+            transition: all 0.7s cubic-bezier(0,.7,0,1);
+            cursor: pointer;
+        }
+        .main1 {
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+        .right {
+            margin-left: auto;
+            justify-content: end;
+            margin-right: 8px;
+            z-index: 993;
+            .icon {
+                cursor: pointer;
+            }
+        }
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-family: "BBH Bartle", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            cursor: pointer;
+        }
+    }
+    .searchpan {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &:hover .searchinput {
+            background-color: darken($bg, 6.75%);
+            width: 192px;
+            opacity: 1;
+            visibility: visible;
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-left: 8px;
+            border: 1px solid darken($bg, 15%);
+        }
+
+        .reach {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 48px;
+            width: 128px;
+            z-index: 2;
+            cursor: pointer;
+            opacity: 0;
+        }
+    }
+    .searched {
+        z-index: 7;
+        display: none;
+        flex-direction: column !important;
+        position: absolute;
+        top: 32px;
+        left: 20px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        box-sizing: border-box;
+        margin-top: 8px;
+        background-color: darken($bg, 6.75%);
+        border: 1px solid darken($bg, 12.5%);
+        color: $text;
+        
+        border-radius: 4px;
+        justify-content: center !important;
+        align-items: flex-start !important;
+
+        .content {
+            background-color: darken($bg, 12.75%);
+            border: 1px solid darken($bg, 17.5%);
+            color: $text;
+            margin: 4px 8px;
+            padding: 8px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column !important;
+            cursor: pointer;
+            width: auto !important;
+            justify-content: center !important;
+            align-items: flex-start !important;
+            h1, p {
+                margin: 0 0 4px 0;
+                color: $text;
+                font-size: 12px;
+                font-family: "TikTok Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                cursor: pointer;
+                font-variation-settings: "slnt" 0, "wdth" 140;
+            }
+
+            p {
+                font-weight: 400;
+                cursor: pointer;
+                font-variation-settings: "slnt" 0, "wdth" 125;
+                margin-bottom: 0;
+            }
+        }
+        &.active {
+            display: flex !important;
+        }
+    }
+    
+    .searchinput {
+        z-index: 45;
+        border-radius: 4px;
+        height: 26px;
+        padding-left: 0;
+        padding-right: 0;
+        color: $text;
+        
+        &:focus {
+            outline: none;
+            background-color: darken($bg, 7.5%);
+        }
+
+        font-family: "TikTok Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: "slnt" 0, "wdth" 120;
+
+        margin-left: 0;
+        width: 0;
+        background-color: rgba(darken($bg, 6.75%), 0);
+        border: 0px solid rgba(darken($bg, 15%), 0);
+        backdrop-filter: blur(64px);
+        visibility: hidden;
+        transition: all 0.7s cubic-bezier(0,.7,0,1);
+        box-sizing: border-box;
+    }
+
+    .search {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transition: all 0.7s cubic-bezier(0,.7,0,1);
+    }
+
+    .main {
+        z-index: 2;
+        width: 100%;
+        margin-top: -32px;
+        height: 100vh;
+        .main12 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            .left, .right {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+                justify-content: center;
+            }
+            .left img {
+                height: 256px;
+                border-radius: 8px;
+            }
+            .spacer {
+                height: 20%;
+                width: 1px;
+                background-color: $bgss;
+            }
+            .ssa {
+                color: $bidde;
+            }
+            h1 {
+                font-family: "TikTok Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-variation-settings: "slnt" 0, "wdth" 100;
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+            }
+            .ss h1 {
+                font-size: 32px;
+                font-family: "BBH Bartle", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .dsa {
+                transition: all 0.4s ease-out;
+                margin-left: 4px;
+                font-weight: 600;
+                font-variation-settings: "slnt" -2, "wdth" 120;
+                &:hover {
+                    font-variation-settings: "slnt" -6, "wdth" 150;
+                }
+            }
+            .read {
+                width: 384px;
+                margin-top: 12px;
+                height: 28px;
+                font-size: 16px;
+                font-family: "TikTok Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-variation-settings: "slnt" 0, "wdth" 150;
+                border-radius: 4px;
+                border: none;
+                background-color: $button;
+                color: $btntext;
+                cursor: pointer;
+                transition: all 0.7s cubic-bezier(0,.7,0,1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: lighten($button, 10%);
+                }
+            }
+            .right img {
+                display: flex;
+                width: 135.5625px;
+                height: 109.5px;
+                margin-bottom: 4px;
+            }
+        }
+        .dk {
+            display: none !important;
+        }
+        .footer {
+            height: 24px;
+            width: 144px;
+            display: flex;
+            flex-direction: row;
+            background-color: $bgw;
+            border-top-right-radius: 4px;
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 24px;
+                margin-left: 6px;
+                color: $bg;
+                font-family: "TikTok Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-size: 12px;
+                font-weight: 500;
+                font-style: normal;
+                font-variation-settings: "slnt" 0, "wdth" 125;
+            }
+        }
+    }
+}
+
+body.dark {
+    svg {
+        fill: $buttonw;
+    }
+    background-color: $bgw;
+    h1, h2, h3, h4, a, p {
+        color: $textw;
+    }
+    .header {
+        background-color: rgba($bgw, 0.8); 
+    }
+
+    .searchinput {
+        color: $btntext;
+    }
+
+    .main {
+        .main12 {
+            .ssa {
+                color: $bidde;
+            }
+            .read {
+                background-color: $buttonw;
+                color: $btntextw;
+
+                &:hover {
+                    background-color: darken($buttonw, 10%);
+                }
+            }
+        }
+        .dk {
+            display: flex !important;
+        }
+        .wh {
+            display: none !important;
+        }
+    }
+    .searchinput {
+        background-color: lighten($bgw, 6.75%) !important;
+        border: 1px solid lighten($bgw, 15%) !important;
+    }
+    .searched {
+        background-color: lighten($bgw, 6.75%) !important;
+        border: 1px solid lighten($bgw, 15%) !important;
+        .content {
+            h1, p {
+                color: $bg !important;
+            }
+            background-color: lighten($bgw, 8.5%) !important;
+            border: 1px solid lighten($bgw, 16.75%) !important;
+        }
+    }
+}
+
+.dkds {
+    position: fixed;
+    bottom: 0;
+    background-color: $bidde;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 32px;
+    gap: 16px;
+    button {
+        background-color: $bg;
+        color: $bgw;
+        width: 64px;
+        height: 20px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-family: "TikTok Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: "slnt" 0, "wdth" 125;
+        font-size: 12px;
+    }
+    a {
+        background-color: $bg;
+        color: $bidde;
+        font-family: "TikTok Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings: "slnt" 0, "wdth" 135;
+        font-size: 12px;
+        width: 96px;
+        height: 20px;
+        border-radius: 4px;
+        border: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    p {
+        font-family: "TikTok Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: "slnt" 0, "wdth" 115;
+        font-size: 14px;
+        color: $bg;
+    }
+}
+
+@media (max-width: 1180px) {
+    .spacer {
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    .main12 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .dkds p {
+        display: none !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .main {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 64px;
+    }
+    .main12 {
+        padding: 20px 0;
+    }
+    .main12 .left img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px !important;
+        overflow: hidden;
+    }
+    .searchinput {
+        position: absolute !important;
+        top: 6px !important;
+        left: 32px !important;
+        width: 0 !important;
+    }
+    .searchpan:hover .searchinput {
+        width: calc(100vw - 80px) !important;
+    }
+    .searched {
+        top: 36px !important;
+        left: 8px !important;
+    }
+    .read {
+        width: 90% !important;
+        max-width: 384px;
+        margin-top: 12px;
+    }
+}

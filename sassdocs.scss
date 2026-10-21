@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=TikTok+Sans:opsz,slnt,wdth,wght@12..36,-6..0,75..150,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+$bgw: #000000;
+$textw: #ffffff;
+$btntextw:#000000;
+$buttonw: #ffffff;
+
+$bg: #ffffff;
+$bgss: #1c1c1c;
+$text: #000000;
+$btntext:#ffffff;
+$button: #000000;
+$bidde: #6400FF;
+
+body {
+    .main {
+        min-height: 100vh;
+        height: auto;
+
+        .main12 {
+            min-height: 100vh;
+            height: auto;
+            .ifpage {
+                display: flex;
+                flex-direction: row;
+                margin-left: 48px;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                padding-left: 12px;
+                padding-right: 12px;
+                overflow: hidden;
+                * {
+                    color: $text;
+                    font-family: "TikTok Sans", sans-serif;
+                    font-optical-sizing: auto;
+                    font-style: normal;
+                    display: flex;
+                    flex-direction: column;
+                }
+                span {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                }
+                .incode {
+                    font-family: "JetBrains Mono", monospace;
+                    font-weight: 475;
+                    background-color: darken($bg, 6.75%);
+                    border: 1px solid darken($bg, 15%);
+                    padding: 0px 4px;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    margin-top: 2px;
+                    width: auto;
+                }
+                .code {
+                    font-family: "JetBrains Mono", monospace;
+                    font-weight: 480;
+                    background-color: darken($bg, 6.75%);
+                    border: 1px solid darken($bg, 15%);
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    white-space: pre;
+                    .bidde {
+                        font-family: "JetBrains Mono", monospace;
+                        font-size: 12px;
+                        font-weight: 420;
+                    }
+                }
+                .left {
+                    flex: 1;
+                    min-width: 128px;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    .left11 {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+                    .back {
+                        transition: background-color 0.7s cubic-bezier(0,.7,0,1);
+                        padding: 4px;
+                        cursor: pointer;
+                        background-color: rgba(0, 0, 0, 0);
+                        border-radius: 4px;
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                    .pages {
+                        background-color: $bgss;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        .pageitem {
+                            color: $bg;
+                            padding: 4px 12px;
+                            cursor: pointer;
+                            transition: font-variation-settings 0.7s cubic-bezier(0,.7,0,1), width 0.7s cubic-bezier(0,.7,0,1);
+                            font-variation-settings: "slnt" -0, "wdth" 135;
+                            width: auto;
+                            min-width: 128px;
+                            &:hover {
+                                font-variation-settings: "slnt" -4, "wdth" 150;
+                            }
+                            &.active {
+                                background-color: $bgw;
+                            }
+                        }
+                        .spacer1 {
+                            cursor: pointer;
+                            width: 100%;
+                            height: 1px;
+                            background-color: lighten($bgss, 10%);
+                        }
+                    }
+                }
+                .docsread {
+                    flex: 5;
+                    padding: 4px 12px;
+                    box-sizing: border-box;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    background-color: darken($bg, 2.5%);
+                    height: 75vh;
+                    border-radius: 12px;
+                    overflow: auto;
+
+                    border: 1px solid darken($bg, 7.5%);
+                }
+            }
+            .right p {
+                font-family: "TikTok Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-size: 24px;
+                font-weight: 600;
+                font-style: normal;
+                font-variation-settings: "slnt" 0, "wdth" 115;
+            }
+
+            .maim112 {
+                height: 40vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .prevww {
+                height: auto;
+                min-height: 420px;
+                width: auto;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-left: 24px;
+                padding-right: 24px;
+                box-sizing: border-box;
+                gap: 20px;
+
+                .prewpan {
+                    position: relative;
+                    cursor: pointer;
+                    max-height: 256px;
+                    transition: all 0.7s cubic-bezier(0,.7,0,1);
+                    transform: scale(1);
+                    overflow: hidden;
+                    .abs {
+                        transition: all 0.7s cubic-bezier(0,.7,0,1);
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        justify-content: flex-end;
+                        padding: 12px;
+                        cursor: pointer;
+                        h1, p {
+                            color: $bg;
+                            font-family: "TikTok Sans", sans-serif;
+                            font-optical-sizing: auto;
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-style: normal;
+                            font-variation-settings: "slnt" -2, "wdth" 115;
+                            cursor: pointer;
+                        }
+                        h1 {
+                            font-size: 24px;
+                            font-weight: 600;
+                            font-variation-settings: "slnt" 0, "wdth" 135;
+                            cursor: pointer;
+                        }
+                        opacity: 0;
+                        border-radius: 8px;
+                        background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+                    }
+                    &:hover {
+                        transform: scale(1.025);
+                        .abs {
+                            opacity: 1;
+                        }
+                    }
+                    .prew {
+                        width: auto;
+                        display: flex;
+                        max-height: 256px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    height: 24px;
+    width: 144px;
+    display: flex;
+    flex-direction: row;
+    background-color: $bgw;
+    border-top-right-radius: 4px;
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+        margin-left: 6px;
+        color: $bg;
+        font-family: "TikTok Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 12px;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings: "slnt" 0, "wdth" 125;
+    }
+}
+
+body.dark * {
+    color: $textw !important;
+}
+
+.bidde {
+    color: $bidde !important;
+}
+
+li::marker {
+    color: #000000 !important;
+    font-size: 16px !important;
+}
+
+ul {
+    padding-left: 12px !important;
+    list-style: disc !important;
+}
+
+.searched {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+
+    .content {
+            
+        flex-direction: column !important;
+        width: auto !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+    }
+}
+
+body.dark .ifpage {
+    .incode {
+        background-color: lighten($bgw, 6.75%) !important;
+        border: 1px solid lighten($bgw, 15%) !important;
+    }
+    .code {
+        background-color: lighten($bgw, 6.75%) !important;
+        border: 1px solid lighten($bgw, 15%) !important;
+    }
+    .docsread {
+        background-color: lighten($bgw, 2.5%) !important;
+        border: 1px solid lighten($bgw, 7.5%) !important;
+    }
+    .bidde {
+        color: lighten($bidde, 25%) !important;
+    }
+    .pageitem.active {
+        background-color: darken($bgss, 3.675%) !important;
+    }
+}
+
+@media (max-width: 1080px) {
+    .ifpage {
+        padding: 0 !important;
+        margin: 0 !important;
+        flex-direction: column !important;
+        gap: 16px;
+        margin-top: 48px !important;
+        .docsread {
+            border-radius: 0 !important;
+            border: none !important;
+        }
+        .left, .left11 {
+            flex-direction: row !important;
+        }
+        .pages {
+            .pageitem {
+                min-width: 84px !important;
+                &:hover {
+                    font-variation-settings: "slnt" -0, "wdth" 135 !important;
+                }
+            }
+        }
+    }
+}

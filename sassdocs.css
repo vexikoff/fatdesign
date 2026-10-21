@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=TikTok+Sans:opsz,slnt,wdth,wght@12..36,-6..0,75..150,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+body .main {
+  min-height: 100vh;
+  height: auto;
+}
+body .main .main12 {
+  min-height: 100vh;
+  height: auto;
+}
+body .main .main12 .ifpage {
+  display: flex;
+  flex-direction: row;
+  margin-left: 48px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow: hidden;
+}
+body .main .main12 .ifpage * {
+  color: #000000;
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+body .main .main12 .ifpage span {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+body .main .main12 .ifpage .incode {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 475;
+  background-color: rgb(237.7875, 237.7875, 237.7875);
+  border: 1px solid rgb(216.75, 216.75, 216.75);
+  padding: 0px 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 2px;
+  width: auto;
+}
+body .main .main12 .ifpage .code {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 480;
+  background-color: rgb(237.7875, 237.7875, 237.7875);
+  border: 1px solid rgb(216.75, 216.75, 216.75);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: pre;
+}
+body .main .main12 .ifpage .code .bidde {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 420;
+}
+body .main .main12 .ifpage .left {
+  flex: 1;
+  min-width: 128px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+body .main .main12 .ifpage .left .left11 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body .main .main12 .ifpage .left .back {
+  transition: background-color 0.7s cubic-bezier(0, 0.7, 0, 1);
+  padding: 4px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+body .main .main12 .ifpage .left .back:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+body .main .main12 .ifpage .left .pages {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+body .main .main12 .ifpage .left .pages .pageitem {
+  color: #ffffff;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: font-variation-settings 0.7s cubic-bezier(0, 0.7, 0, 1), width 0.7s cubic-bezier(0, 0.7, 0, 1);
+  font-variation-settings: "slnt" 0, "wdth" 135;
+  width: auto;
+  min-width: 128px;
+}
+body .main .main12 .ifpage .left .pages .pageitem:hover {
+  font-variation-settings: "slnt" -4, "wdth" 150;
+}
+body .main .main12 .ifpage .left .pages .pageitem.active {
+  background-color: #000000;
+}
+body .main .main12 .ifpage .left .pages .spacer1 {
+  cursor: pointer;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(53.5, 53.5, 53.5);
+}
+body .main .main12 .ifpage .docsread {
+  flex: 5;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248.625, 248.625, 248.625);
+  height: 75vh;
+  border-radius: 12px;
+  overflow: auto;
+  border: 1px solid rgb(235.875, 235.875, 235.875);
+}
+body .main .main12 .right p {
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 115;
+}
+body .main .main12 .maim112 {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .main .main12 .prevww {
+  height: auto;
+  min-height: 420px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+body .main .main12 .prevww .prewpan {
+  position: relative;
+  cursor: pointer;
+  max-height: 256px;
+  transition: all 0.7s cubic-bezier(0, 0.7, 0, 1);
+  transform: scale(1);
+  overflow: hidden;
+}
+body .main .main12 .prevww .prewpan .abs {
+  transition: all 0.7s cubic-bezier(0, 0.7, 0, 1);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  justify-content: flex-end;
+  padding: 12px;
+  cursor: pointer;
+}
+body .main .main12 .prevww .prewpan .abs h1, body .main .main12 .prevww .prewpan .abs p {
+  color: #ffffff;
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" -2, "wdth" 115;
+  cursor: pointer;
+}
+body .main .main12 .prevww .prewpan .abs h1 {
+  font-size: 24px;
+  font-weight: 600;
+  font-variation-settings: "slnt" 0, "wdth" 135;
+  cursor: pointer;
+}
+body .main .main12 .prevww .prewpan .abs {
+  opacity: 0;
+  border-radius: 8px;
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+body .main .main12 .prevww .prewpan:hover {
+  transform: scale(1.025);
+}
+body .main .main12 .prevww .prewpan:hover .abs {
+  opacity: 1;
+}
+body .main .main12 .prevww .prewpan .prew {
+  width: auto;
+  display: flex;
+  max-height: 256px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.footer {
+  height: 24px;
+  width: 144px;
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  border-top-right-radius: 4px;
+}
+.footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  margin-left: 6px;
+  color: #ffffff;
+  font-family: "TikTok Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 125;
+}
+
+body.dark * {
+  color: #ffffff !important;
+}
+
+.bidde {
+  color: #6400FF !important;
+}
+
+li::marker {
+  color: #000000 !important;
+  font-size: 16px !important;
+}
+
+ul {
+  padding-left: 12px !important;
+  list-style: disc !important;
+}
+
+.searched {
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+.searched .content {
+  flex-direction: column !important;
+  width: auto !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+body.dark .ifpage .incode {
+  background-color: rgb(17.2125, 17.2125, 17.2125) !important;
+  border: 1px solid rgb(38.25, 38.25, 38.25) !important;
+}
+body.dark .ifpage .code {
+  background-color: rgb(17.2125, 17.2125, 17.2125) !important;
+  border: 1px solid rgb(38.25, 38.25, 38.25) !important;
+}
+body.dark .ifpage .docsread {
+  background-color: rgb(6.375, 6.375, 6.375) !important;
+  border: 1px solid rgb(19.125, 19.125, 19.125) !important;
+}
+body.dark .ifpage .bidde {
+  color: rgb(177.5, 127.5, 255) !important;
+}
+body.dark .ifpage .pageitem.active {
+  background-color: rgb(18.62875, 18.62875, 18.62875) !important;
+}
+
+@media (max-width: 1080px) {
+  .ifpage {
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-direction: column !important;
+    gap: 16px;
+    margin-top: 48px !important;
+  }
+  .ifpage .docsread {
+    border-radius: 0 !important;
+    border: none !important;
+  }
+  .ifpage .left, .ifpage .left11 {
+    flex-direction: row !important;
+  }
+  .ifpage .pages .pageitem {
+    min-width: 84px !important;
+  }
+  .ifpage .pages .pageitem:hover {
+    font-variation-settings: "slnt" 0, "wdth" 135 !important;
+  }
+}/*# sourceMappingURL=sassdocs.css.map */
