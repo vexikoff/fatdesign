@@ -36,7 +36,7 @@ function pageKeys(doc) {
 }
 
 function pageUrl(docId, subKey) {
-    return '/docs?page=' + encodeURIComponent(docId) + '&doc=' + encodeURIComponent(subKey);
+    return '/fatdesign/docs?page=' + encodeURIComponent(docId) + '&doc=' + encodeURIComponent(subKey);
 }
 
 function parseMarkdown(text) {
